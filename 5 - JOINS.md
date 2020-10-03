@@ -39,7 +39,10 @@ FROM customer
 INNER JOIN address
 ON address.address_id = customer.address_id
 WHERE district = 'California';
+```
 
+- Double INNER JOIN
+```SQL
 WITH actor_table AS (SELECT film_id, first_name, last_name FROM actor
 INNER JOIN film_actor
 ON film_actor.actor_id = actor.actor_id
